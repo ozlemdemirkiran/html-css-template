@@ -1,0 +1,32 @@
+body {
+    background-color: #f2c6bd;
+    margin: 0;
+    padding: 0;
+}
+
+.logo > img {
+    height: 50px;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.left {
+    background-color: green;
+    display: flex;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.action-button > button {
+    background-color: #121692;
+    border: none;
+    color: white;
+    padding: 10px 15px 10px 15px;
+}
