@@ -1,7 +1,17 @@
+@font-face {
+    font-family: benimFontum;
+    src: url(./fonts/TitilliumWeb-Regular.ttf);
+}
+
+button,a, p {
+    font-family: benimFontum;
+}
+
 body {
     background-color: #f2c6bd;
     margin: 0;
     padding: 0;
+    font-family: benimFontum;
 }
 
 .logo > img {
@@ -12,26 +22,91 @@ body {
     display: flex;
     width: 100%;
     justify-content: space-around;
-}
-
-.left {
-    background-color: green;
-    display: flex;
-}
-
-.right {
-    display: flex;
+    padding-top: 35px;
     align-items: center;
 }
 
-.action-button > button {
-    background-color: #121692;
+.left {
+    display: flex;
+    /*flex-direction: row;  flex tanımlanınca default olarak row olarak ayarlar*/
+    align-items: center;
+    gap: 15px;
+}
+
+.company-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    
+}
+
+
+.company-info > h2, p {
+    font-size: 18px;
+    margin: 0;
+
+}
+
+/* .company-info > p {
+    font-size: 18px;
+} */
+
+.logo-img {
+    background-color: white;
+    padding: 5px;
+    border-radius: 15px;
+    border: 2px solid #f2f7e1;
+    box-shadow: 0px 0px 3px rgb(19, 19, 19, 0.3);
+}
+.right {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+/* .action-button > button {
+    background-color: #3141c8;
     border: none;
     color: white;
     padding: 10px 15px 10px 15px;
+    border-radius: 4px;
+} */
+
+.button-design {
+    background-color: #3141c8;
+    border: none;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    border-radius: 4px;
 }
 
-.menü > a {
+.menu > a {
     color: black;
     text-decoration: none;
+    margin-left: 15px;
+}
+
+
+
+.main-right > img {
+    height: 60vh;
+}
+
+.main-section {
+    display: flex;
+}
+
+.main-left > h2 {
+    font-size: 64px;
+}
+
+.learn-button {
+    color: #3141c8;
+    background-color: white;
+    border: 0;
+    padding: 10px 15px 10px 15px;
+    border-radius: 4px;
+    font-weight: 700;
+    border: 2px solid #f2f7e1;
+    box-shadow: 0px 0px 3px rgb(19, 19, 19, 0.3);
 }
